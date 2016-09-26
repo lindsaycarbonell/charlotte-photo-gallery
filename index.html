@@ -19,7 +19,14 @@ label[for] { cursor: pointer; }
 
 input[type="checkbox"] { display: none; }
 
-body { background-color: #000; }
+body {
+  background-color: #222;
+}
+
+.container{
+  width:850px;
+
+}
 
 .lightbox {
   width: 100%;
@@ -58,7 +65,7 @@ input[type="checkbox"]:checked ~ .grid { opacity: .125; }
 
 .grid {
   width: 100%;
-  position: fixed;
+  /*position: fixed;*/
   top: 0;
   left: 0;
   height: 100%;
@@ -120,6 +127,7 @@ input[type="checkbox"]:checked ~ .grid { opacity: .125; }
     display:none!important;
     cursor:pointer;
   }
+
 }
 
 .pic-title, .pic-sub, .pic-credit{
@@ -131,29 +139,70 @@ input[type="checkbox"]:checked ~ .grid { opacity: .125; }
 }
 
 .pic-title{
-  font-size:15pt;
+  font-size:8pt;
+  z-index:40;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  -webkit-transition: none;
+  transition: none;
+  width:100%;
+  /*margin-bottom:2pt;*/
+}
+
+.pic-title:hover{
+  background-color:green;
 }
 
 .pic-sub{
-  font-size:12pt;
+  font-size:10pt;
 }
 
 .pic-credit{
-  font-size:9pt;
+  font-size:8pt;
 }
 
 .pic-credit:before{
   content:'Photo by ';
 }
+
+ul{
+  padding:0;
+  }
+
+.date-selector{
+  color:white;
+  padding:0;
+  margin:0;
+  margin-left:16px;
+  display:inline-block;
+  cursor:pointer;
+  }
+.date-selector:nth-child(1){
+  margin-left:32px;
+}
+.date-selector.selected{
+  border-bottom:3px solid #006687;
+  /*color:#006687;*/
+}
 </style>
 </head>
 
 <body>
-  <div class="append-inputs">
-  </div>
+  <!-- <div class="container"> -->
+
+      <ul>
+        <li class="date-selector selected" data-date="09/21/2016" >September 21</li>
+        <li class="date-selector" data-date="09/22/2016" >September 22</li>
+      </ul>
+
+      <div class="append-inputs">
+      </div>
 
 
-<div class="grid"></div>
+      <div class="grid"></div>
+
+  <!-- </div> -->
 
 </body>
 </html>

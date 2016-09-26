@@ -1,5 +1,5 @@
 # charlotte-photo-gallery
-A photo gallery for State of Charlotte. This gallery was built from the Pure CSS Photo Gallery: https://github.com/lindsaycarbonell/charlotte-photo-gallery
+A photo gallery for State of Charlotte. This gallery was built from the Pure CSS Photo Gallery: http://www.cssscript.com/pure-css-photo-gallery-image-lightbox-support/
 
 # How to add a photo to the gallery
 In the google spreadsheet, put the case-sensitive name of your photo file WITH the file extension. Put the photo in the assets folder, and it will link up.
